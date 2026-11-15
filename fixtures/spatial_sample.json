@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "data_version": "synthetic-spatial-1",
+    "weight_policy": "row_standardized",
+    "note": "合成数据，不对应真实企业或个人；含缺资料城市与孤立城市用于边界方案对照"
+  },
+  "collections": {
+    "cities": [
+      {"id": "c01", "revision": 1, "y": 11.8, "features": {"investment": 2.1, "labor": 10.2}, "status": "observed"},
+      {"id": "c02", "revision": 1, "y": 13.6, "features": {"investment": 3.4, "labor": 12.8}, "status": "observed"},
+      {"id": "c03", "revision": 1, "y": 9.1, "features": {"investment": 1.2, "labor": 8.4}, "status": "observed"},
+      {"id": "c04", "revision": 1, "y": 12.9, "features": {"investment": 2.9, "labor": 11.5}, "status": "observed"},
+      {"id": "c05", "revision": 1, "y": 15.2, "features": {"investment": 4.1, "labor": 14.1}, "status": "observed"},
+      {"id": "c06", "revision": 1, "y": 8.4, "features": {"investment": 0.9, "labor": 7.2}, "status": "observed"},
+      {"id": "c07", "revision": 1, "y": 10.7, "features": {"investment": 1.8, "labor": 9.6}, "status": "observed"},
+      {"id": "c08", "revision": 1, "y": 14.1, "features": {"investment": 3.6, "labor": 13.0}, "status": "observed"},
+      {"id": "c09", "revision": 1, "y": null, "features": {"investment": 2.5, "labor": 10.0}, "status": "missing"},
+      {"id": "c10", "revision": 1, "y": 11.0, "features": {"investment": 2.0, "labor": 9.0}, "status": "suppressed"}
+    ],
+    "edges": [
+      {"id": "e01", "revision": 1, "from": "c01", "to": "c02", "weight": 2},
+      {"id": "e02", "revision": 1, "from": "c01", "to": "c03", "weight": 1},
+      {"id": "e03", "revision": 1, "from": "c02", "to": "c01", "weight": 1},
+      {"id": "e04", "revision": 1, "from": "c02", "to": "c04", "weight": 2},
+      {"id": "e05", "revision": 1, "from": "c02", "to": "c05", "weight": 1},
+      {"id": "e06", "revision": 1, "from": "c03", "to": "c01", "weight": 1},
+      {"id": "e07", "revision": 1, "from": "c03", "to": "c06", "weight": 2},
+      {"id": "e08", "revision": 1, "from": "c04", "to": "c02", "weight": 2},
+      {"id": "e09", "revision": 1, "from": "c04", "to": "c05", "weight": 2},
+      {"id": "e10", "revision": 1, "from": "c04", "to": "c09", "weight": 1},
+      {"id": "e11", "revision": 1, "from": "c05", "to": "c02", "weight": 1},
+      {"id": "e12", "revision": 1, "from": "c05", "to": "c04", "weight": 2},
+      {"id": "e13", "revision": 1, "from": "c05", "to": "c08", "weight": 1},
+      {"id": "e14", "revision": 1, "from": "c06", "to": "c03", "weight": 2},
+      {"id": "e15", "revision": 1, "from": "c06", "to": "c07", "weight": 1},
+      {"id": "e16", "revision": 1, "from": "c07", "to": "c06", "weight": 1},
+      {"id": "e17", "revision": 1, "from": "c07", "to": "c08", "weight": 2},
+      {"id": "e18", "revision": 1, "from": "c08", "to": "c05", "weight": 1},
+      {"id": "e19", "revision": 1, "from": "c08", "to": "c07", "weight": 2},
+      {"id": "e20", "revision": 1, "from": "c09", "to": "c04", "weight": 1},
+      {"id": "e21", "revision": 1, "from": "c09", "to": "c10", "weight": 1},
+      {"id": "e22", "revision": 1, "from": "c10", "to": "c09", "weight": 1}
+    ]
+  }
+}

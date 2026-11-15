@@ -10,6 +10,14 @@ app/catalog.py 按集合和记录键解析修订，拒绝同修订冲突；app/b
 
     python -m app.service fixtures/sample.json
 
+空间滞后模型分析（SAR，独立入口，不改变既有摘要语义）：
+
+    python -m app.spatial_service fixtures/spatial_sample.json [mc_draws] [seed]
+
+输出含 frozen（完整全集归一后取子矩阵、不重新归一、不补零）与 renorm（缩减样本重标化）两套
+估计及边界方案对比、rho 可行域与 log-det 双路径误差、拟合诊断、共线诊断，以及直接/间接/总影响
+的联合不确定性。方法口径、样本边界与适用条件见 [资料契约](docs/data-contract.md)。
+
 运行当前模块检查：
 
     python -m unittest discover -s tests -v
